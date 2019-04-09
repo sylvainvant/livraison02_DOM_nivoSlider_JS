@@ -1,0 +1,45 @@
+h1 {
+  text-align: center;
+}
+
+.slider {
+  position: relative;
+  /*overflow: hidden;*/
+  width: 400px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+ul {
+  text-align: center;
+}
+
+.slide-show{
+  display:initial;
+  width: 400px;
+  height: 300px;
+}
+
+.slide {
+  display: none;
+
+}
+
+li img {
+  width: 70%;
+  height: 50%;
+
+}
+
+.container {
+  text-align: center;
+  margin: auto auto auto 75px;
+
+}
+
+
+.top {
+  text-align: right;
+  margin: 0 25px;
+
+}

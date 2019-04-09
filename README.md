@@ -2,7 +2,7 @@
 
 Deuxième livraison DOM un Carousel JS.
 
-  Critères qualité:
+  Critères de  qualité:
 
     • L'image doit switch à chaque clic sur le bouton.
     • Une Liste image avec la balise(<li>).
