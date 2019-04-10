@@ -14,7 +14,7 @@ li { list-style-type: none; }
   box-shadow: 0px 5px 0px #666666;
  }
 
-.diapo {
+.slide {
   position: absolute;
   margin-left: auto;
   margin-right: auto;
@@ -41,17 +41,17 @@ button { border: none; }
 
 .suivant{ right:26%; }
 
-.numeros { color: #fff; background: #0261FE; }
+.numbers { color: #fff; background: #0261FE; }
 
 .cadre-demo {
   position: absolute;
-  margin: -90px auto 0 auto;
-  left: 3%;
+  margin: -59px auto 0 auto;
+  left: 38px;
   right: 0%;
-  padding: 5px;
+  /*padding: 5px;*/
   background-color: black;
-  width: 42%;
-  height: auto;}
+  width: 36%;
+  height: 30px;}
 
 .demo {
   border-radius: 50% 50% 50% 50%;
