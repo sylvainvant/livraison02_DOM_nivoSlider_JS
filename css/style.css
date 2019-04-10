@@ -62,3 +62,10 @@ button { border: none; }
 .top {
   text-align: right;
 }
+
+.button-theme {
+  font-size:25px;
+  width: auto;
+  display: flex;
+  justify-content: flex-end;
+}

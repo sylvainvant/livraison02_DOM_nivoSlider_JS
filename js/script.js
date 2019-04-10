@@ -2,6 +2,7 @@
   //let elem = document.getElementsByTagName('img')[0];
   //elem.classList.toggle("slide");
 let slideShow = 1;
+let themeLight = true;
 display(slideShow);
 
 function buttons(n) {
@@ -37,4 +38,15 @@ function display(n) {
 }
 
 
+// add event click icon theme
+theme.addEventListener("click",function() {
+  themeLight = !themeLight;
 
+    if(themeLight) {
+      document.body.style.backgroundColor = "inherit";
+      document.body.style.color = "#4d4d4d";
+    } else{
+      document.body.style.backgroundColor = "#4d4d4d";
+      document.body.style.color = "white";
+    }
+})
