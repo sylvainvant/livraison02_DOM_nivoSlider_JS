@@ -4,7 +4,12 @@ li { list-style-type: none; }
 
 .container {
   margin: 0 auto;
-  text-align: center; }
+  text-align: center;
+  background-image: url('../img/background.png');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  height: 90%;
+  }
 
 .cadre {
   min-height: 500px;
