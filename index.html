@@ -11,41 +11,34 @@
 <body>
   <div class="container">
     <header>
-      <div class="button-theme">
-        <div id="theme" class="form-control">
-          <i class="fas fa-moon"></i>
-        </div><!-- /div id="theme"-->
-      </div><!-- /div class="button-theme-->
-      <h1>Nivo Slider</h1>
-    </header><!-- /header -->
-    <section>
-      <button class="precedent" onclick="buttons(-1)">❮❮</button>
-      <button class="suivant" onclick="buttons(1)">❯❯</button>
-    </section><!-- /section -->
-    <main>
-      <ul class="cadre">
-        <li><img class="slide" src="./img/img1.jpeg" alt=""></li>
-        <li><img class="slide" src="./img/img2.jpeg" alt=""></li>
-        <li><img class="slide" src="./img/img3.jpeg" alt=""></li>
-        <li><img class="slide" src="./img/img4.jpeg" alt=""></li>
-        <li><img class="slide" src="./img/img5.jpeg" alt=""></li>
-      </ul><!-- /ul -->
-    </main><!-- /main -->
+     <h1>Nivo Slider</h1>
+     <div class="button-theme">
+      <div id="theme" class="form-control">
+        <i class="fas fa-moon"></i>
+      </div><!-- /div id="theme"-->
+    </div><!-- /div class="button-theme-->    
+  </header><!-- /header -->
 
-    <div class="cadre-demo">
-      <button class="demo" onclick="actifId(1)"></button>
-      <button class="demo" onclick="actifId(2)"></button>
-      <button class="demo" onclick="actifId(3)"></button>
-      <button class="demo" onclick="actifId(4)"></button>
-      <button class="demo" onclick="actifId(5)"></button>
-    </div><!-- /cadre-demo -->
+  <main>
+    <ul class="cadre">
 
-  </div><!-- /container -->
+    </ul>
+    <div class="control">
+      <button class="controlBtn" data-id="-1">❮❮</button>
+      <ul class="cadre-demo">          
+      </ul>
+      <button class="controlBtn" data-id="1">❯❯</button>
+    </div>
+  </main><!-- /main -->
 
-  <div class="top">
-    <a href="#top" title="top"><img src="./img/top.png" alt="top" /></a>
-  </div><!-- /div class="top" -->
+  <!-- /cadre-demo -->
 
-  <script src="./js/script.js"></script>
+</div><!-- /container -->
+
+<div class="top">
+  <a href="#top" title="top"><img src="./img/top.png" alt="top" /></a>
+</div><!-- /div class="top" -->
+
+<script src="./js/script.js"></script>
 </body>
 </html>
