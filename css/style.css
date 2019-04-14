@@ -1,88 +1,73 @@
 h1 { text-align: center;    margin: auto; }
 
 li { list-style-type: none; }
-body{
-  margin:0;
-}
+
+body { margin:0; }
+
 header{
   margin: 0 auto;
-  text-align: center;
+
   background-image: url('../img/back.png');
+    background-repeat: repeat-x;
     background-position-y: center;
     background-position-x: center;
+
   display: flex;
   justify-content: flex-end;
-  height: 100px;
+  text-align: center;
+
+  height: 180px;
 }
+
 .cadre .active{
   position: relative;
+
   top:0;
   left:25%;
   width:50%;
+
   display:block !important;
-  box-shadow: 0px 5px 0px #666666;  
+  box-shadow: 0px 5px 0px #666666;
 }
-.cadre {
+
+.cadre { height: auto; padding: 0; margin: 0; }
+
+.cadre li img { display: none; }
+
+main{ width: 100%; position: relative; }
+
+button { border: none; font-size: 3rem; }
+
+
+.control {
+  /*background-color: transparent;*/
+  background-color: silver ;
   height: auto;
-  padding: 0;
-  margin:0;
-}
-
-.cadre li img{
-  display: none;
-
-}
-main{
-  width: 100%;
-  position: relative;
-}
-
-button { border: none; }
-
-.precedent, .suivant{
-  color: black;
-  font-size: 2rem;
-  background: white;
-
-}
-
-.numbers { color: #fff; background: #0261FE; }
-
-.control { 
-  background-color: transparent;
-  height: auto;
-  justify-content: space-around;
+  /*justify-content: space-around;*/
+  justify-content: space-between;
   align-items: center;
-  display:flex;
-      position: absolute;
-    width:50%;
-    top: 90%;
-    left: 25%;
-}
-.cadre-demo{
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  position: absolute;
+  width: 50%;
+  top: 91%;
+  left: 25%;
 }
+
+.cadre-demo{ display: flex; /*justify-content: space-around;*/ justify-content: space-between; align-items: center; }
+
 .cadre-demo li button {
   border-radius: 50% 50% 50% 50%;
-  width: 15px;
-  height: 15px;
-  border:1px solid black;
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
 }
-.cadre-demo .active{
-  background-color:black;
-}
+.cadre-demo .active{ background-color: #0261FE; color: #fff; /*background-color:black;*/ }
 
+/*
+.top { text-align: right; }
+*/
 
-.top {
-  text-align: right;
-}
-
-.button-theme {
-  font-size:25px;
-  width: auto;
-}
+.button-theme { font-size: 2rem; width: auto; margin: 20px 20px 0 0; }
 
 @media screen and (max-width:480px){
   .cadre .active{

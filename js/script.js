@@ -3,29 +3,29 @@
   //elem.classList.toggle("slide");
   let slideShow = 1;
   let themeLight = true;
-  var pathImg = [
+  let pathImg = [
   "./img/img1.jpeg",
   "./img/img2.jpeg",
   "./img/img3.jpeg",
-  "./img/img4.jpeg"/*,
-  "./img/img5.jpeg"*/
+  "./img/img4.jpeg",
+  "./img/img5.jpeg"
   ]
   CreateListLI();
   addEventControlBtn();
 
 
   function addEventControlBtn(){
-    var listControlBtn = document.getElementsByClassName("controlBtn");
-    for (var i = 0; i < listControlBtn.length; i++) {
+    let listControlBtn = document.getElementsByClassName("controlBtn");
+    for (let i = 0; i < listControlBtn.length; i++) {
       listControlBtn[i].addEventListener("click",controlBtn)
     }
   }
 
   function controlBtn(){
-    var elementActive = document.getElementsByClassName("btn active");
-    var id = parseInt(elementActive[0].dataset.id,10);
-    var direction = parseInt(this.dataset.id,10);
-    var count = id + direction;
+    let elementActive = document.getElementsByClassName("btn active");
+    let id = parseInt(elementActive[0].dataset.id,10);
+    let direction = parseInt(this.dataset.id,10);
+    let count = id + direction;
 
     (count < 0)?count=pathImg.length-1:null;
     (count>pathImg.length-1)?count = 0:null;
@@ -33,13 +33,13 @@
   }
 
   function display() {
-    var id = this.dataset.id;
+    let id = this.dataset.id;
     classControlActive(id);
   }
 
   function classControlActive(id){
-    var listBtn = document.getElementsByClassName("btn");
-    var listImg= document.getElementsByClassName("img");
+    let listBtn = document.getElementsByClassName("btn");
+    let listImg= document.getElementsByClassName("img");
     for (let i = 0; i < pathImg.length; i++) {
       if(i == id){
         listBtn[i].classList.add("active");
@@ -54,34 +54,36 @@
 
 
 //Create HTML ELEMENTS
-function CreateListLI(){
-  var ulElement = document.getElementsByClassName("cadre");
-  for (var i = 0; i < pathImg.length; i++) {
-    var liElement = document.createElement("li");
+function CreateListLI() {
+  let ulElement = document.getElementsByClassName("cadre");
+  for (let i = 0; i < pathImg.length; i++) {
+    let liElement = document.createElement("li");
 
-    var imgLiElement = document.createElement("img");
+    let imgLiElement = document.createElement("img");
     imgLiElement.src = pathImg[i];
     imgLiElement.classList.add("img");
-    if(i==0){
+    if(i == 0){
       imgLiElement.classList.add("active");
     }
-    liElement.append(imgLiElement)
+    liElement.append(imgLiElement);
     ulElement[0].append(liElement);
   }
   createListNav();
 }
-function createListNav(){
- var ulElement = document.getElementsByClassName("cadre-demo");
- for (var i = 0; i < pathImg.length; i++)
+
+function createListNav() {
+ let ulElement = document.getElementsByClassName("cadre-demo");
+
+ for (let i = 0; i < pathImg.length; i++)
  {
-  var liElement = document.createElement("li");
-  var buttonLiElement = document.createElement("button");
+  let liElement = document.createElement("li");
+  let buttonLiElement = document.createElement("button");
   buttonLiElement.dataset.id = i;
   buttonLiElement.classList.add("btn");
-  if(i==0){
+  if(i == 0){
     buttonLiElement.classList.add("active");
   }
-  liElement.append(buttonLiElement)
+  liElement.append(buttonLiElement);
   ulElement[0].append(liElement);
   buttonLiElement.addEventListener("click",display);
 }
@@ -93,6 +95,7 @@ function createListNav(){
 
 // add event click icon theme
 theme.addEventListener("click",function() {
+
   themeLight = !themeLight;
 
   if(themeLight) {
